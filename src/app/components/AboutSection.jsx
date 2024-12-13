@@ -11,10 +11,12 @@ const TAB_DATA = [
       <ul className="list-disc pl-2">
         <li>Node.js</li>
         <li>Express</li>
-        <li>PostgreSQL</li>
+        <li>My SQL</li>
         <li>Sequelize</li>
         <li>JavaScript</li>
         <li>React</li>
+        <li>Next.js</li>
+        <li>Taildwind</li>
       </ul>
     ),
   },
@@ -23,8 +25,8 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>Fullstack Academy of Code</li>
-        <li>University of California, Santa Cruz</li>
+        <li>Fullstack Academy of Code Purwadhika Digital School</li>
+        <li>Ngesti Waluyo Academic Of University</li>
       </ul>
     ),
   },
@@ -33,8 +35,7 @@ const TAB_DATA = [
     id: "certifications",
     content: (
       <ul className="list-disc pl-2">
-        <li>AWS Cloud Practitioner</li>
-        <li>Google Professional Cloud Developer</li>
+        <li>Purwadhika Digital School Fullstack Web Developer Certificate</li>
       </ul>
     ),
   },
@@ -57,12 +58,14 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-            I am a full stack web developer with a passion for creating
-            interactive and responsive web applications. I have experience
-            working with JavaScript, React, Redux, Node.js, Express, PostgreSQL,
-            Sequelize, HTML, CSS, and Git. I am a quick learner and I am always
-            looking to expand my knowledge and skill set. I am a team player and
-            I am excited to work with others to create amazing applications.
+            Andre Adyatmoko is a student web developer at Purwadhika Digital
+            Technology School, where he is learning various aspects of web
+            development, including JavaScript, React, Express, and the Chakra UI
+            framework. He has completed several projects using these
+            technologies, such as a personal portfolio website, a blog app, and
+            a chat app. Prior to joining Purwadhika, he worked as a backend
+            developer at RedHunter, a startup company that provides inventory
+            management solutions.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton

@@ -9,8 +9,8 @@ export async function POST(req, res) {
   console.log(email, subject, message);
   try {
     const data = await resend.emails.send({
-      from: fromEmail,
-      to: [fromEmail, email],
+      from: fromEmail, // FROM email tetap yang sudah diverifikasi
+      to: ["andreadyatmoko@gmail.com"], // Email tujuan tetap
       subject: subject,
       react: (
         <>
