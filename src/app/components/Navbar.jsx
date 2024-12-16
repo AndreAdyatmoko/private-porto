@@ -1,4 +1,5 @@
 "use client";
+
 import Link from "next/link";
 import React, { useState } from "react";
 import NavLink from "./NavLink";
@@ -16,7 +17,7 @@ const navLinks = [
   },
   {
     title: "Contact",
-    path: "#contact",
+    path: "#contact", // Ini menuju ID "contact"
   },
 ];
 

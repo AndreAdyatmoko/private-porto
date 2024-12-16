@@ -8,23 +8,27 @@ const TAB_DATA = [
     title: "Skills",
     id: "skills",
     content: (
-      <ul className="list-disc pl-2">
-        <li>Node.js</li>
-        <li>Express</li>
-        <li>My SQL</li>
-        <li>Sequelize</li>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>Next.js</li>
-        <li>Taildwind</li>
-      </ul>
+      <div className="grid grid-cols-2 gap-4">
+        <ul className="list-disc pl-4">
+          <li>Node.js</li>
+          <li>Express</li>
+          <li>My SQL</li>
+          <li>Sequelize</li>
+        </ul>
+        <ul className="list-disc pl-4">
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Next.js</li>
+          <li>Tailwind</li>
+        </ul>
+      </div>
     ),
   },
   {
     title: "Education",
     id: "education",
     content: (
-      <ul className="list-disc pl-2">
+      <ul className="list-disc pl-4">
         <li>Fullstack Academy of Code Purwadhika Digital School</li>
         <li>Ngesti Waluyo Academic Of University</li>
       </ul>
@@ -34,7 +38,7 @@ const TAB_DATA = [
     title: "Certifications",
     id: "certifications",
     content: (
-      <ul className="list-disc pl-2">
+      <ul className="list-disc pl-4">
         <li>Purwadhika Digital School Fullstack Web Developer Certificate</li>
       </ul>
     ),
@@ -58,36 +62,33 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-            Andre Adyatmoko is a student web developer at Purwadhika Digital
-            Technology School, where he is learning various aspects of web
-            development, including JavaScript, React, Express, and the Chakra UI
-            framework. He has completed several projects using these
-            technologies, such as a personal portfolio website, a blog app, and
-            a chat app. Prior to joining Purwadhika, he worked as a backend
-            developer at RedHunter, a startup company that provides inventory
-            management solutions.
+            I am Andre Adyatmoko, a passionate web developer currently honing my
+            skills at Purwadhika Digital Technology School. With expertise in
+            JavaScript, React, and Express, I have successfully built projects
+            like portfolio websites, blogs, and chat applications. Before this,
+            I gained professional experience as a backend developer at
+            RedHunter, contributing to innovative inventory management
+            solutions. My goal is to create impactful digital experiences
+            through clean, efficient, and scalable code.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
               selectTab={() => handleTabChange("skills")}
               active={tab === "skills"}
             >
-              {" "}
-              Skills{" "}
+              Skills
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange("education")}
               active={tab === "education"}
             >
-              {" "}
-              Education{" "}
+              Education
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange("certifications")}
               active={tab === "certifications"}
             >
-              {" "}
-              Certifications{" "}
+              Certifications
             </TabButton>
           </div>
           <div className="mt-8">
